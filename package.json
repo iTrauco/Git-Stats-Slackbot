@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sapinspys/gh-activity-slackbot/issues"
   },
-  "homepage": "https://github.com/sapinspys/gh-activity-slackbot#readme"
+  "homepage": "https://github.com/sapinspys/gh-activity-slackbot#readme",
+  "dependencies": {
+    "botkit": "^4.0.1",
+    "dotenv": "^8.0.0"
+  }
 }
