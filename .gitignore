@@ -40,3 +40,7 @@ Thumbs.db
 # Dependencies
 ######################
 /node_modules
+
+# Security
+######################
+.env
