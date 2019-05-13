@@ -1,0 +1,19 @@
+{
+  "name": "gh-activity-slackbot",
+  "version": "1.0.0",
+  "description": "Slack bot for tracking GitHub activity using Node.js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapinspys/gh-activity-slackbot.git"
+  },
+  "author": "Guillermo Arria-Devoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sapinspys/gh-activity-slackbot/issues"
+  },
+  "homepage": "https://github.com/sapinspys/gh-activity-slackbot#readme"
+}
