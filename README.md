@@ -10,13 +10,16 @@
 * Run `touch index.js` 
 3. Create a Slack App (https://api.slack.com/apps/new)
 4. Navigate to 'Basic Information'
-* Add app credentials to their respective .env variables 
+* Add app credentials to your environment file (`/.env`s) 
 3a. Navigate to 'Oauth & Permissions'
 3b. Set permission scopes: Add a bot user and add slash commands/actions to messages
 3c. Create a bot user in app settings, set to always be on
 3d. Request to 'Install App to Workspace' (Usually denied for policy)
 3e. If denied, create test workspace then install app to workspace
 3. On your .env file set `BOT_TOKEN = [Bot User OAuth Access Token]`
+* Configure the bot on your IDE (`/index.js`)
+* Add bot functionality (`/index.js`)
+
 5. Enable the Events API in app settings
 5a. Configure the Request URL
 5b. 

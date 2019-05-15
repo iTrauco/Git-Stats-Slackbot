@@ -9,14 +9,15 @@ if (!process.env.CLIENT_ID || !process.env.CLIENT_SECRET || !process.env.PORT ||
   console.log('All required variables found!')
 }
 
-// Configuring the bot
-var controller = botkit.slackbot({
+// CONFIGURE THE BOT
+// Set up the controller
+let controller = botkit.slackbot({
   json_file_store: './db_slackbutton_slash_command/', // Saves Slack conversations
   debug: true, // Detailed console debugging
   clientSigningSecret: process.env.CLIENT_SIGNING_SECRET,
  })
 
-// Connecting Node app to Slack app
+// Connect Node app to Slack app
 controller.configureSlackApp({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
@@ -24,7 +25,7 @@ controller.configureSlackApp({
   scopes: ['commands', 'bot'],
 })
 
-// Creating the BOT! 
+// Create the BOT! 
 let bot = controller.spawn({
   token: process.env.BOT_TOKEN,
   incoming_webhook: {
@@ -43,5 +44,11 @@ controller.setupWebserver(process.env.PORT, function(err, webserver){
         res.send('Success!');
       }
     });
+ });
+
+//  BOT FUNCTIONALITY
+// Listening
+controller.hears('hi', 'direct_message', function(bot, message) {
+  bot.reply(message, 'Hello');
  });
 
