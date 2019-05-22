@@ -1,23 +1,17 @@
 {
-  "name": "gh-activity-slackbot",
+  "name": "botkit-git-stats",
   "version": "1.0.0",
-  "description": "Slack bot for tracking GitHub activity using Node.js ",
-  "main": "index.js",
+  "description": "",
+  "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sapinspys/gh-activity-slackbot.git"
-  },
-  "author": "Guillermo Arria-Devoe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sapinspys/gh-activity-slackbot/issues"
-  },
-  "homepage": "https://github.com/sapinspys/gh-activity-slackbot#readme",
   "dependencies": {
+    "botbuilder-adapter-slack": "^1.0.3",
+    "botbuilder-storage-mongodb": "^0.9.5",
     "botkit": "^4.0.1",
-    "dotenv": "^8.0.0"
+    "botkit-plugin-cms": "^1.0.0",
+    "dotenv": "^7.0.0"
   }
 }
